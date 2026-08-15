@@ -24,7 +24,7 @@ public class CorporateTalentHub3 {
         // ==========================================
         // TASK 2: Inicialización con Factory Methods (Colecciones inmutables)
         // ==========================================
-        List<String> tecnologias = List.of("Java", "Spring Boot", "PostgreSQL", "JavaScript");
+        List<String> tecnologias = List.of("Java", "Spring Boot", "PostgreSQL", "javaScript");
         Map<String, String> sedes = Map.of(
                 "S1", "Sede Principal",
                 "S2", "Sede Norte"
@@ -50,7 +50,7 @@ public class CorporateTalentHub3 {
                 try {
                     System.out.print("Seleccione una opción: ");
                     var opcion = scanner.nextInt();
-                    scanner.nextLine(); // Consume el salto de línea pendiente.
+                    scanner.nextLine();
 
                     switch (opcion) {
                         case 1:
@@ -71,16 +71,10 @@ public class CorporateTalentHub3 {
                             mostrarCategoriasSalariales();
                             break;
 
-                        // ==========================================
-                        // TASK 3: Java 21 Sequenced Collections
-                        // ==========================================
                         case 4:
                             probarSequencedCollections(listaEmpleados);
                             break;
 
-                        // ==========================================
-                        // TASK 4: Filtrado avanzado con removeIf
-                        // ==========================================
                         case 5:
                             filtrarEmpleadosBajoDesempeno(listaEmpleados, mapaEmpleados);
                             break;
@@ -133,7 +127,7 @@ public class CorporateTalentHub3 {
             System.out.println("El ID debe ser mayor que cero.");
             return;
         } else if (mapaEmpleados.containsKey(id)) {
-            // Búsqueda instantánea gracias al HashMap
+            // Búsqueda con HashMap
             System.out.println("Ya existe un empleado con ese ID.");
             return;
         }
@@ -260,9 +254,8 @@ public class CorporateTalentHub3 {
         }
     }
 
-    // ==========================================
-    // TASK 4 Implementation: removeIf & `var`
-    // ==========================================
+  
+
     private static void filtrarEmpleadosBajoDesempeno(
             ArrayList<Empleado> listaEmpleados, 
             HashMap<Integer, Empleado> mapaEmpleados) {
