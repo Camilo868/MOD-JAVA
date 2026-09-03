@@ -1,4 +1,4 @@
-package com.corporatetalenthub3.modelo;
+package com.riwi.talent.modelo;
 
 
 /**

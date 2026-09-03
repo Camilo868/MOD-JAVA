@@ -8,6 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
-        <exec.mainClass>com.corporatetalenthub3.CorporateTalentHub3</exec.mainClass>
+        <exec.mainClass>com.riwi.talent.Main</exec.mainClass>
     </properties>
+    <name>corporate_talent_hub</name>
 </project>
