@@ -1,2 +1,8 @@
+com\corporatetalenthub3\modelo\Desarrollador.class
 com\corporatetalenthub3\CorporateTalentHub3.class
+com\corporatetalenthub3\modelo\Gerente.class
+com\corporatetalenthub3\modelo\ConsultorExterno.class
+com\corporatetalenthub3\modelo\Persona.class
+com\corporatetalenthub3\modelo\DesempenoReport.class
 com\corporatetalenthub3\modelo\Empleado.class
+com\corporatetalenthub3\modelo\Promocionable.class
